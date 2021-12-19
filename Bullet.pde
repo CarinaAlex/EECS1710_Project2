@@ -49,7 +49,7 @@ class Bullet{
     isBeingShot = true;
   }
   
-  void isCollided(int x, int y, int r){
+  boolean isCollided(int x, int y, int r){
     //fill(255);
     //circle(width/2, (bulletY - (rect_height / 2)), 3);
     //fill(255);
@@ -74,8 +74,11 @@ class Bullet{
     
     if(collided){
       reset();
+      return true;
     }
-    else collided = false;
+    else{
+      return false;
+    }
   }
   
 }
