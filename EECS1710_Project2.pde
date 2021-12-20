@@ -61,12 +61,10 @@ void draw() {
     }
   }
   
-  
   bullet.display();
   
   if(num_destroyed == N) game_end();
   
-
 }
 
 void keyPressed(){
