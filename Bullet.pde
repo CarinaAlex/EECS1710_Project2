@@ -32,11 +32,7 @@ class Bullet{
     if(bulletY < 0){
       reset();
     }
-    //if(collided){
-    //  isBeingShot = false;
-    //  collided = false;
-    //  reset();
-    //}
+
   }
 
   void reset(){
@@ -50,12 +46,6 @@ class Bullet{
   }
   
   boolean isCollided(int x, int y, int r){
-    //fill(255);
-    //circle(width/2, (bulletY - (rect_height / 2)), 3);
-    //fill(255);
-    //circle(width/2, (y + (r / 2)), 3);]
-    //check_x = (bulletX < (x + (r / 2))) && (bulletX > (x - (r / 2)));
-    //check_y = (bulletY - (rect_height / 2)) <= (y + (r / 2));
     
     int circledistance_x = abs(x - bulletX);
     int circledistance_y = abs(y - bulletY);
